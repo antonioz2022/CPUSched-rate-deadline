@@ -187,7 +187,8 @@ int processExecution(int period[], int remaining_burst[], int cpu_burst[], int l
             }
             if (time1 + t >= total_time)
             {
-                return time1 + t;
+                printf("idle for %d units\n", t);
+                return time1 + t; 
             }
         }
         printf("idle for %d units\n", t);
@@ -528,6 +529,7 @@ int processExecutionD(int period[], int remaining_burst[], int cpu_burst[], int 
             }
             if (time1 + t >= total_time)
             {
+                printf("idle for %d units\n", t);
                 return time1 + t;
             }
         }
